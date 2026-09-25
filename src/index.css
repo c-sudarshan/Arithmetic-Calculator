@@ -1,0 +1,18 @@
+:root {
+	font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+	color: #17324d;
+	background: #eaf2f7;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+	background: linear-gradient(135deg, #eaf2f7 0%, #f8fbfd 100%);
+}

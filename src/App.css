@@ -1,0 +1,131 @@
+.calculator-page {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	padding: 24px;
+}
+
+.calculator-card {
+	width: min(100%, 440px);
+	padding: 36px;
+	background: #ffffff;
+	border: 1px solid #dbe4ee;
+	border-radius: 16px;
+	box-shadow: 0 16px 40px rgba(31, 55, 80, 0.12);
+}
+
+h1 {
+	margin: 0;
+	color: #17324d;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.subtitle {
+	margin: 8px 0 28px;
+	color: #64748b;
+	text-align: center;
+}
+
+.input-group {
+	display: grid;
+	gap: 8px;
+	margin-bottom: 18px;
+}
+
+.input-group label {
+	color: #334155;
+	font-size: 0.95rem;
+	font-weight: 600;
+}
+
+.input-group input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 12px 14px;
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+	color: #17324d;
+	font: inherit;
+	outline: none;
+	transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.input-group input:focus {
+	border-color: #2878a8;
+	box-shadow: 0 0 0 3px rgba(40, 120, 168, 0.15);
+}
+
+.button-row {
+	display: flex;
+	justify-content: center;
+	gap: 14px;
+	margin: 28px 0;
+}
+
+.operation-button {
+	min-width: 140px;
+	padding: 12px 20px;
+	border: 0;
+	border-radius: 8px;
+	color: #ffffff;
+	cursor: pointer;
+	font: inherit;
+	font-weight: 700;
+	transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.add-button {
+	background: #2878a8;
+}
+
+.subtract-button {
+	background: #d06b3c;
+}
+
+.operation-button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 16px rgba(31, 55, 80, 0.2);
+}
+
+.add-button:hover {
+	background: #1e638d;
+}
+
+.subtract-button:hover {
+	background: #b6532b;
+}
+
+.operation-button:focus-visible {
+	outline: 3px solid #f5c451;
+	outline-offset: 3px;
+}
+
+.result-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px;
+	background: #f1f6fa;
+	border-radius: 8px;
+	color: #526579;
+}
+
+.result-box strong {
+	color: #17324d;
+	font-size: 1.3rem;
+}
+
+@media (max-width: 480px) {
+	.calculator-card {
+		padding: 28px 20px;
+	}
+
+	.button-row {
+		flex-direction: column;
+	}
+
+	.operation-button {
+		width: 100%;
+	}
+}

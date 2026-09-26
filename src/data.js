@@ -1,1 +1,1 @@
-export const NODE_URL = "http://localhost:4433";
+export const NODE_URL = "https://arithmetic-calculator-backend-dz8m.onrender.com";
